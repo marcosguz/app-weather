@@ -1,0 +1,102 @@
+.App {
+  background-image: url(https://physicsworld.com/wp-content/uploads/2020/08/sun-rays-152304506-Shutterstock_Volodymyr-Goinyk.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+  color: rgb(119, 46, 253);
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  justify-content: center;
+}
+
+.card__weather{
+  background-color: rgba(0, 46, 150, 0.2);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 8px 15px;
+  margin: 0 auto;
+  padding: 15px;
+  text-align: center;
+  width: 38%;
+}
+
+.card__weather-weather {
+  display: flex;  
+}
+
+.card__weather-img {
+  border-right: 1px solid #772efd;
+  width: 60%;
+}
+
+.card__weather-temp {
+  display: flex;
+  font-size: .7rem;
+  font-weight: 600;
+  justify-content: space-around;
+  padding: 0 .2rem 0 .2rem;
+}
+
+.card__weather-temp span {
+  color: black;
+}
+
+.card__weather-humidity {
+  display: flex;
+  font-size: .7rem;
+  font-weight: 600;
+  justify-content: space-between;
+  padding: 0 1.2rem 0 1.2rem;
+}
+
+.card__weather-humidity span {
+  color: black;
+}
+
+.card__weather-info {
+  width: 40%;
+}
+
+.card__weather-wind,
+.card__weather-clouds,
+.card__weather-pressure {
+  display: flex;
+  font-weight: 600;
+  justify-content: start;
+  margin: 0 1rem 0 .5rem;
+}
+
+.card__weather-wind span,
+.card__weather-clouds span,
+.card__weather-pressure span {
+  color: black;
+}
+
+.card__weather-title {
+  text-align: center;
+}
+
+.card__weather-deg {
+  display: flex;
+}
+
+.card__weather-img-temp {
+  width: 65%;
+}
+
+.card__weather-deg p {
+  color: black;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.card__weather-button {
+  background-color: #772efd;
+  border: none;
+  border-radius: 10px;
+  color: #FFF;
+  font-size: .75rem;
+  margin: 1rem;
+  padding: .75rem;
+}
