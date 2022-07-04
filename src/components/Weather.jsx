@@ -69,7 +69,7 @@ const Weather = () => {
 
                     <div className='card__weather-deg'>
                         <div className='card__weather-img-temp'>
-                            <img src={`http://openweathermap.org/img/wn/${data.weather?.[0].icon}@2x.png`} alt="" />
+                            <img src={`https://openweathermap.org/img/wn/${data.weather?.[0].icon}@2x.png`} alt="" />
                         </div>
                         
                         <p>{celcius.toFixed(2)} {isCelcius ? '°C' : '°F'}</p>
