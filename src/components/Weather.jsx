@@ -18,7 +18,7 @@ const Weather = () => {
             const lat = position.coords.latitude
             const lon = position.coords.longitude
 
-            axios.get(`http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=aa228e08e9ed7ba7d7a931a70896b533`)
+            axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=aa228e08e9ed7ba7d7a931a70896b533`)
                 .then(response => {
                     setData(response.data)
                     const celcius = (response.data.main.temp - 273.15)
@@ -69,7 +69,7 @@ const Weather = () => {
 
                     <div className='card__weather-deg'>
                         <div className='card__weather-img-temp'>
-                            <img src={`http://openweathermap.org/img/wn/${data.weather?.[0].icon}@2x.png`} alt="" />
+                            <img src={`https://openweathermap.org/img/wn/${data.weather?.[0].icon}@2x.png`} alt="" />
                         </div>
                         
                         <p>{celcius.toFixed(2)} {isCelcius ? '°C' : '°F'}</p>
